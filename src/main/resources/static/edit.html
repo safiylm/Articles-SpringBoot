@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><head>
+    <title>Create </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form action="#" th:action="@{/blog-article-create}" th:object="${blogarticle}" method="post">
+    <p>Titre: <input type="text" th:field="*{titre}" /></p>
+    <p>Image Url: <input type="text" th:field="*{photo}" /></p>
+    <p>Contenu: <input type="text" th:field="*{contenu}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+    <button> Supprimer </button>
+
+</body>
+</html>
