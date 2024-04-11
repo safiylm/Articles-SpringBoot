@@ -1,12 +1,10 @@
-package com.example.articles.blogarticle;
+package com.example.articles.controller;
 
+import com.example.articles.model.BlogArticle;
+import com.example.articles.service.BlogArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.List;
 
 @RestController

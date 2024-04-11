@@ -1,4 +1,4 @@
-package com.example.articles.blogarticle;
+package com.example.articles.model;
 
 import org.apache.logging.log4j.message.AsynchronouslyFormattable;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -65,7 +65,7 @@ private Long Id;
     public String toHTMLCard() {
         return "<div class=\"div-article\">" +
                 "<img id='image' src='" + photo + '\'' +"/>"+
-                "<p> " + titre + "</p>" +
+                "<a href='/article/"+getId()+"'> " + titre + "</a>" +
                 "</div>"
                 ;
 

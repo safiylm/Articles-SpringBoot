@@ -1,7 +1,7 @@
-package com.example.articles.blogarticle;
+package com.example.articles.service;
 
+import com.example.articles.model.BlogArticle;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.ArrayList;
 import java.util.List;

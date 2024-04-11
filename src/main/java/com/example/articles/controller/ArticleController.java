@@ -1,6 +1,6 @@
-package com.example.articles;
+package com.example.articles.controller;
 
-import com.example.articles.blogarticle.BlogArticleService;
+import com.example.articles.service.BlogArticleService;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -16,15 +16,16 @@ public class ArticleController {
     }
 
 
-    @GetMapping(value= "", produces = MediaType.TEXT_HTML_VALUE)
+    @GetMapping(value= "{id}", produces = MediaType.TEXT_HTML_VALUE)
     @ResponseBody
-    public String article(){
-        return "<style> #display-article{ margin: 50px auto; padding :30px;}"+
+    public String article(@PathVariable(name = "id") Long id ){
+        return "<style> #display-article{ margin: 50px auto; padding :30px;   text-align: center; }"+
                 " #display-article #titre{ font-size:larger; text-align:center;}" +
                 " #display-article #image{ width:700px; height:400px; object-fit:cover;}" +
                 " #display-article #contenu{ padding: 30px 0;} </style>"+
-                blogArticleService.getArticle(1L).toHTMLPage();
+                blogArticleService.getArticle(id).toHTMLPage();
     }
+
 
 }
 

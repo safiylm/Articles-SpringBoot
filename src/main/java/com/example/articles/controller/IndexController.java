@@ -1,12 +1,10 @@
-package com.example.articles;
+package com.example.articles.controller;
 
-import com.example.articles.blogarticle.BlogArticleService;
+import com.example.articles.service.BlogArticleService;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 @Controller //
 @RequestMapping(path= "/")
@@ -53,10 +51,12 @@ public class IndexController {
                 "            border-radius: 10px 10px 0 0;\n" +
                 "        }\n" +
                 "\n" +
-                "        .div-article p {\n" +
+                "        .div-article a {\n" +
                 "            height: 80px;\n" +
-                "            padding :10px;\n" +
+                "            margin :20px 10px;\n" +
                 "            text-align:center;\n" +
+               "             text-decoration:none;\n" +
+               "             color:black; display: block;\n" +
                 "        }\n" +
                 "    </style>\n" +
                 "</head>\n" +
