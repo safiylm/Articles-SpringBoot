@@ -24,8 +24,65 @@ public class BlogArticleController {
                 "Créez une application Java avec Spring Boot.............................."));
 
         blogArticleService.create(new BlogArticle(1L,"How to read JSON data in Spring Boot and write to a database",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpKOjKBOX4lzBqQP-RbcdrvFav4nO1PQhs5g&s",
-                "How to read JSON data in Spring Boot and write to a database.............................."));
+                "",
+                ""));
+
+        blogArticleService.create(new BlogArticle(2L,"Expression de la motivation for job trainer",
+                "https://www.esce.fr/wp-content/uploads/sites/11/2022/03/reflexion-dossier-sesame.jpg",
+                ""));
+
+        blogArticleService.create(new BlogArticle(3L,"Comment rédiger un cahier des charges",
+                "https://www.lafabriquedunet.fr/wp-content/uploads/2022/11/objectifs-smart-art-rediger-cahier-des-charges.png",
+                ""));
+
+        blogArticleService.create(new BlogArticle(4L,"How Do Web Sessions Work? | Hazelcast",
+                "https://hazelcast.com/wp-content/uploads/2021/12/diagram-Web-Sessions.png",
+                ""));
+
+        blogArticleService.create(new BlogArticle(5L,"Deployment definition & fonctionnement ",
+                "https://www.weodeo.com/wp-content/uploads/2021/11/Virtualisation.jpg",
+                ""));
+
+        blogArticleService.create(new BlogArticle(6L,"Code propre & quality",
+                "https://online.edhec.edu/wp-content/uploads/2022/07/pexels-luis-gomes-546819-1-1920x1275.jpg",
+                ""));
+
+        blogArticleService.create(new BlogArticle(7L,"Les cookies",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvCKucG5SZAdKlbRKa0Schyj5D1tKozDGww&s",
+                ""));
+
+        blogArticleService.create(new BlogArticle(8L,"Protocole HTTP",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR59yYzlLJlZ3GL7ykUCtoc0vlVphzWVc2QQMrdjye6AQ&s",
+                ""));
+
+        blogArticleService.create(new BlogArticle(9L,"Méthode Scrum ",
+                "https://bubbleplan.net/blog/wp-content/uploads/2018/05/430.jpeg",
+                ""));
+
+        blogArticleService.create(new BlogArticle(10L,"Méthode Agile ",
+                "https://etcdigital.fr/wp-content/uploads/2022/01/MicrosoftTeams-image-10.jpg",
+                ""));
+
+        blogArticleService.create(new BlogArticle(11L,"Référencement SEO",
+                "https://f.maformation.fr/edito/sites/3/2022/01/apprendre-referencement.jpeg",
+                ""));
+
+        blogArticleService.create(new BlogArticle(12L,"Test de connaissance Informatique ",
+                "https://blog.lesjeudis.com/wp-content/uploads/2022/03/bilan-test-competences-informatiques.jpg",
+                ""));
+
+        blogArticleService.create(new BlogArticle(13L,"Différence entre Angular & React ",
+                "https://integrio.net/static/img%20react%20vs%20angular-153402ea67e4341b0cf0e7effd693593.png",
+                ""));
+
+        blogArticleService.create(new BlogArticle(14L,"Sécurité informatique ",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Cybersecurity.png/1200px-Cybersecurity.png",
+                ""));
+
+        blogArticleService.create(new BlogArticle(15L,"Animation en CSS",
+                "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fulvbh5kb1wurvegzz7bs.png",
+                ""));
+
 
     }
 
