@@ -63,12 +63,12 @@ private Long Id;
     }
 
     public String toHTMLCard() {
-        return "<div id='display-article'>" +
-                "<h1 id='titre'> " + titre +"</h1>"+
+        return "<div class=\"div-article\">" +
                 "<img id='image' src='" + photo + '\'' +"/>"+
-                "<div id='contenu'> " + contenu + "</div>" +
+                "<p> " + titre + "</p>" +
                 "</div>"
                 ;
+
     }
 
     public void setContenu(String contenu) {
