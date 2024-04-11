@@ -53,6 +53,24 @@ private Long Id;
                 '}';
     }
 
+    public String toHTMLPage() {
+        return "<div id='display-article'>" +
+                "<h1 id='titre'> " + titre +"</h1>"+
+                "<img id='image' src='" + photo + '\'' +"/>"+
+                "<div id='contenu'> " + contenu + "</div>" +
+                "</div>"
+                ;
+    }
+
+    public String toHTMLCard() {
+        return "<div id='display-article'>" +
+                "<h1 id='titre'> " + titre +"</h1>"+
+                "<img id='image' src='" + photo + '\'' +"/>"+
+                "<div id='contenu'> " + contenu + "</div>" +
+                "</div>"
+                ;
+    }
+
     public void setContenu(String contenu) {
         this.contenu = contenu;
     }
