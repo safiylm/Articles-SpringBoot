@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
 @Controller //
 @RequestMapping(path= "/")
 public class IndexController {
@@ -63,9 +64,6 @@ public class IndexController {
                 "<body>\n" +
                 "<p th:text=\"|Hello, ${name}!|\" />\n" +
                 "\n" +
-                "<a href=\"/edit\">Edit </a>\n" +
-                "<a href=\"/article\">Article </a>\n" +
-                "<a href=\"/create\">Create </a>\n" +
                 "<div id=\"liste-of-articles\" class=\"d-flex flex-row align-items-center justify-content-center flex-wrap\">\n" +
                 "  ";
 
