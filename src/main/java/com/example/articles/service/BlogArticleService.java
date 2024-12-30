@@ -14,8 +14,21 @@ public class BlogArticleService {
 
     //get all articles
     public List<BlogArticle> getArticles(){
+        create(new BlogArticle(0L,"How Do Web Sessions Work? | Hazelcast",
+                "https://hazelcast.com/foundations/software-architecture/web-session/"));
+
+        create(new BlogArticle(1L,"Les cookies",
+                "https://www.kaspersky.fr/resource-center/definitions/cookies"));
+
+        create(new BlogArticle(2L,"Référencement SEO",
+                "https://www.seo.fr/definition/comprendre-referencement"));
+
+        create(new BlogArticle(3L,"Link URLs",
+                "https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#link-urls"));
+
         return listeArticle;
     }
+
 
     //add in arraylist the new article
     public BlogArticle create( BlogArticle article ){
